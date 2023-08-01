@@ -1,0 +1,24 @@
+.search {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  height: 80px;
+  margin-top: -40px;
+  border-radius: var(--border-radius-s);
+  padding: .75rem;
+  background-color: var(--color-white);
+  z-index: 150;
+  
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 100%;
+    border-radius: var(--border-radius-s);
+
+    &.primary {
+      background-color: var(--color-violet);
+    }
+  }
+}

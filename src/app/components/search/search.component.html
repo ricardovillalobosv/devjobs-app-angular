@@ -1,0 +1,15 @@
+<form class="search" [formGroup]="searchForm">
+  <app-input
+    formControlName="search"
+    id="search-control"
+    placeholder="Filter by ..."
+  ></app-input>
+  
+  <button class="search__btn">
+    <img src="assets/svg/icon-filter.svg" alt="icon-search" />
+  </button>
+  <button class="search__btn primary">
+    <img src="assets/svg/icon-search.svg" alt="icon-search" />
+  </button>
+</form>
+<pre>{{ searchForm.value | json }}</pre>
