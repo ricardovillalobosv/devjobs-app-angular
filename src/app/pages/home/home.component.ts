@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import data from '../../data/data.json';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  jobs = data;
 
+  constructor() {
+    console.log('data', this.jobs);
+  }
 }
