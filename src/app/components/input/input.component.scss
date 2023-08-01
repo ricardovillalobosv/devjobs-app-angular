@@ -1,0 +1,13 @@
+.input {
+  display: block;
+  height: 100%;
+
+  &__control {
+    height: 100%;
+    padding: .75rem;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
