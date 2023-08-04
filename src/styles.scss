@@ -4,9 +4,17 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html {
+  font-size: 100%;
+}
+
 :root {
   --color-white: #ffffff;
   --color-violet: #5964e0;
+  --color-grey: #6e8098;
   --padding-container: 1.5rem;
-  --border-radius-s: 5px;
+  --border-radius-s: 0.5rem;
+  --border-radius-m: 0.75rem;
+  --border-radius-l: 1rem;
+  --border-radius-xl: 1.5rem;
 }

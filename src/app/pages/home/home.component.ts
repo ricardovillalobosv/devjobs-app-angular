@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import data from '../../data/data.json';
+import { Job } from 'src/app/interfaces/job.interface';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,7 @@ import data from '../../data/data.json';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  jobs = data;
+  jobs: Job[] = data;
 
   constructor() {
     console.log('data', this.jobs);

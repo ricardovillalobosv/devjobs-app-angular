@@ -1,4 +1,3 @@
-import { Contract } from "./contract.enum";
 import { Requirements } from "./requirements.interface";
 
 export interface Job {
@@ -8,7 +7,7 @@ export interface Job {
   logoBackground?: string;
   position?: string;
   postedAt?: string;
-  contract?: Contract;
+  contract?: string;
   location?: string;
   website?: string;
   apply?: string;

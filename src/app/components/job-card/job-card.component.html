@@ -1,1 +1,18 @@
-<p>job-card works!</p>
+<article class="job-card">
+  <div
+    class="job-card__logo flex justify-center items-center"
+    [style]="{ 'background-color': job.logoBackground }"
+  >
+    <img [src]="getImg(job.logo)" [alt]="job.company" />
+  </div>
+  <div class="job-card__container flex flex-col gap-5">
+    <div class="flex items-center gap-2 mt-6">
+      <p class="job-card__information">{{ job.postedAt }}</p>
+      <span class="dot"></span>
+      <p class="job-card__information">{{ job.contract }}</p>
+    </div>
+    <h1 class="job-card__position">{{ job.position }}</h1>
+    <h2 class="job-card__company">{{ job.company }}</h2>
+    <h3 class="job-card__location mt-4">{{ job.location }}</h3>
+  </div>
+</article>

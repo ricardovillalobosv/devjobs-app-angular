@@ -1,0 +1,43 @@
+.job-card {
+  position: relative;
+  padding: 0 2rem 2rem;
+  background-color: var(--color-white);
+
+  &__logo {
+    position: absolute;
+    left: 1.5rem;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius-m);
+  }
+
+  &__container {
+    padding-top: 1.7rem;
+  }
+
+  &__information,
+  &__company {
+    font-size: 1.15rem;
+    line-height: 1.2rem;
+  }
+
+  &__position {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+  }
+
+  &__location {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+  }
+}
+
+.dot {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  background-color: var(--color-grey);
+}
