@@ -11,7 +11,9 @@
       <span class="dot"></span>
       <p class="job-card__information">{{ job.contract }}</p>
     </div>
-    <h1 class="job-card__position">{{ job.position }}</h1>
+    <h1 class="job-card__position" (click)="toJob(job.id)">
+      {{ job.position }}
+    </h1>
     <h2 class="job-card__company">{{ job.company }}</h2>
     <h3 class="job-card__location mt-4">{{ job.location }}</h3>
   </div>
