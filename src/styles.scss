@@ -1,12 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap');
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
-html {
-  font-size: 100%;
-}
 
 :root {
   --color-white: #ffffff;
@@ -14,8 +11,12 @@ html {
   --color-grey: #6e8098;
   --color-dark: #19202d;
   --padding-container: 1.5rem;
-  --border-radius-s: 0.5rem;
-  --border-radius-m: 0.75rem;
-  --border-radius-l: 1rem;
-  --border-radius-xl: 1.5rem;
+  --border-radius-s: 0.25rem;
+  --border-radius-m: 0.5rem;
+  --border-radius-l: 0.75rem;
+  --border-radius-xl: 1rem;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
 }

@@ -9,7 +9,7 @@
     top: -25px;
     width: 50px;
     height: 50px;
-    border-radius: var(--border-radius-m);
+    border-radius: var(--border-radius-xl);
   }
 
   &__container {
@@ -18,7 +18,7 @@
 
   &__information,
   &__company {
-    font-size: 1.15rem;
+    font-size: 1rem;
     line-height: 1.2rem;
     color: var(--color-grey);
   }
@@ -26,14 +26,14 @@
   &__position {
     font-size: 1.4rem;
     line-height: 1.4rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--color-dark);
   }
 
   &__location {
     font-size: 0.9rem;
     line-height: 1.25rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-violet);
   }
 }
