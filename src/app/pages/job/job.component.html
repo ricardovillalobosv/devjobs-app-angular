@@ -1,1 +1,45 @@
-<p>job works! {{ id }}</p>
+<section class="job">
+  <article class="job__company">
+    <div
+      class="job__company__logo flex justify-center items-center"
+      [style]="{ 'background-color': job.logoBackground }"
+    >
+      <img [src]="img" [alt]="job.company" />
+    </div>
+    <div class="job__company__container">
+      <div>
+        <h1 class="job__company__name">{{ job.company }}</h1>
+        <p class="job__company__website">{{ job.website }}</p>
+      </div>
+      <app-button label="Company Site" type="secondary"></app-button>
+    </div>
+  </article>
+
+  <article class="job__description">
+    <div>
+      <div class="flex items-center gap-3">
+        <p class="job__description__text">{{ job.postedAt }}</p>
+        <app-dot></app-dot>
+        <p class="job__description__text">{{ job.contract }}</p>
+      </div>
+      <h1 class="job__description__title mt-3">{{ job.position }}</h1>
+      <h2 class="job__description__location mb-12">{{ job.location }}</h2>
+
+      <app-button label="Apply now"></app-button>
+    </div>
+
+    <p class="job__description__text">{{ job.description }}</p>
+
+    <app-job-info title="Requirements" [info]="requirements"></app-job-info>
+
+    <app-job-info
+      title="What You Will Do"
+      [info]="role"
+      [numbers]="true"
+    ></app-job-info>
+  </article>
+
+  <article class="job__apply">
+    <app-button label="Apply now"></app-button>
+  </article>
+</section>

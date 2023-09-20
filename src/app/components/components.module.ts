@@ -5,6 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
 import { JobCardComponent } from './job-card/job-card.component';
 import { InputComponent } from './input/input.component';
+import { JobInfoComponent } from './job-info/job-info.component';
+import { DotComponent } from './dot/dot.component';
+import { ButtonComponent } from './button/button.component';
 
 
 
@@ -12,7 +15,10 @@ import { InputComponent } from './input/input.component';
   declarations: [
     SearchComponent,
     JobCardComponent,
-    InputComponent
+    InputComponent,
+    JobInfoComponent,
+    DotComponent,
+    ButtonComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +26,10 @@ import { InputComponent } from './input/input.component';
   ],
   exports: [
     SearchComponent,
-    JobCardComponent
+    JobCardComponent,
+    JobInfoComponent,
+    DotComponent,
+    ButtonComponent
   ],
 })
 export class ComponentsModule { }

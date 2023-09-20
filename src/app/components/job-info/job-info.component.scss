@@ -1,0 +1,29 @@
+.info {
+
+  &__text {
+    font-size: 1rem;
+    color: var(--color-dark-grey);
+  }
+
+  &__subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    &__item {
+      position: relative;
+      display: flex;
+      gap: 1.5rem;
+
+      & > .dot {
+        position: relative;
+        top: 0.5rem;
+      }
+    }
+  }
+}

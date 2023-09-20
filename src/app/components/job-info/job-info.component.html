@@ -1,0 +1,18 @@
+<div class="info">
+  <h3 class="info__subtitle mb-5">{{ title }}</h3>
+  <p class="info__text">{{ info.content }}</p>
+  <ul class="info__list mt-4">
+    <li
+      *ngFor="let item of info?.items; index as i"
+      class="info__list__item info__text"
+    >
+      <div *ngIf="numbers">
+        <strong>{{ i + 1 }}</strong>
+      </div>
+      <ng-template [ngIf]="!numbers">
+        <app-dot></app-dot>
+      </ng-template>
+      {{ item }}
+    </li>
+  </ul>
+</div>
