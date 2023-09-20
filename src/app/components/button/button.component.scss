@@ -4,14 +4,19 @@
   font-weight: 700;
   border-radius: var(--border-radius-s);
   width: 100%;
+  transition: all 0.25s ease-in-out;
 
   &.primary {
     color: var(--color-white);
     background-color: var(--color-violet);
   }
-  
+
   &.secondary {
     color: var(--color-violet);
     background-color: var(--color-light-violet);
+  }
+
+  &:hover {
+    filter: brightness(0.9);
   }
 }
